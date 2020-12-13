@@ -4,7 +4,7 @@
             <div class="container">
                 <h3>Register</h3>
                 <hr>
-                <form action="/" method="post">
+                <form action="/register" method="post">
                     <div class="row">
                         <div class="form-group col-md-6 col-sm-5">
                             <label for="firstName"><strong>First name: </strong></label>
@@ -23,9 +23,16 @@
                             <input type="text" name="password" class="form-control" id="password">
                         </div>
                         <div class="form-group col-md-6 col-sm-5">
-                            <label for="confirmPassword"><strong>Confirm password: </strong></label>
-                            <input type="text" name="confirmPassword" class="form-control" id="confirmPassword">
+                            <label for="passwordConfirm"><strong>Confirm password: </strong></label>
+                            <input type="text" name="passwordConfirm" class="form-control" id="passwordConfirm">
                         </div>
+                        <?php if(isset($validation)): ?>
+                            <div class="col-12">
+                                <div class="alert alert-danger" role="alert">
+                                    <?= $validation->listErrors() ?>
+                                </div>
+                            </div>
+                        <?php endif; ?>
                     </div>
                     <div class="row">
                         <div class="col-12 col-sm-4">

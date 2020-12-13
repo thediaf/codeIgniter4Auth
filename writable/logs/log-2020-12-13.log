@@ -1,0 +1,10 @@
+CRITICAL - 2020-12-13 10:42:50 --> Call to undefined method CodeIgniter\Validation\Validation::listErros()
+#0 /home/thediaf/projects/codeIgniter4Auth/system/View/View.php(246): include()
+#1 /home/thediaf/projects/codeIgniter4Auth/system/Common.php(1119): CodeIgniter\View\View->render()
+#2 /home/thediaf/projects/codeIgniter4Auth/app/Controllers/User.php(41): view()
+#3 /home/thediaf/projects/codeIgniter4Auth/system/CodeIgniter.php(918): App\Controllers\User->register()
+#4 /home/thediaf/projects/codeIgniter4Auth/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /home/thediaf/projects/codeIgniter4Auth/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/thediaf/projects/codeIgniter4Auth/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /home/thediaf/projects/codeIgniter4Auth/system/Commands/Server/rewrite.php(34): require_once('/home/thediaf/p...')
+#8 {main}
